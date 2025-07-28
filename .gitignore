@@ -1,2 +1,22 @@
-*/cache/
-*.log
+# Logs, caches, and backups
+**/.DS_Store
+**/*~ 
+**/#*#
+**/.cache/
+**/*.log
+
+# Discord modules or binaries
+discord/**/discord_voice.node
+
+# Compiled binaries
+*.o
+*.so
+*.out
+*.a
+
+# Editor junk
+*.swp
+*.swo
+*.tmp
+.idea/
+.vscode/

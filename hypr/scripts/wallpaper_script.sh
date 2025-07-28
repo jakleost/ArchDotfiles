@@ -1,5 +1,16 @@
 #!/bin/bash
 
+SCRIPT_NAME="$(basename "$0")"
+RUNNING_PIDS=$(pgrep -f "$SCRIPT_NAME" | grep -v $$)
+
+if [ -n "$RUNNING_PIDS" ]; then
+    echo "Killing existing instances: $RUNNING_PIDS"
+    while IFS= read -r pid; do
+        kill "$pid"
+    done <<< "$RUNNING_PIDS"
+    sleep 1
+fi
+
 WALLPAPERS="$HOME/Pictures/Wallpapers"
 # Delay between switches (in seconds)
 INTERVAL=120

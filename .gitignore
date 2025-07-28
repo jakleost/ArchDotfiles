@@ -20,4 +20,18 @@ discord/**/discord_voice.node
 *.tmp
 .idea/
 .vscode/
+
+# Folder
 discord/
+user-dirs.locale
+user-dirs.dirs
+dconf/
+bpytop/
+Electron/
+glib-2.0/
+go/
+gtk-3.0/
+nvim/
+pulse/
+systemd/
+yay/

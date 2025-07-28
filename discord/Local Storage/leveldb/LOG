@@ -1,0 +1,6 @@
+2025/07/28-00:00:20.491 5b7e Reusing MANIFEST /home/jakleost/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/07/28-00:00:20.495 5b7e Recovering log #20
+2025/07/28-00:00:20.495 5b7e Reusing old log /home/jakleost/.config/discord/Local Storage/leveldb/000020.log 
+2025/07/28-00:04:25.621 5b7f Level-0 table #24: started
+2025/07/28-00:04:25.641 5b7f Level-0 table #24: 1576906 bytes OK
+2025/07/28-00:04:25.642 5b7f Delete type=0 #20

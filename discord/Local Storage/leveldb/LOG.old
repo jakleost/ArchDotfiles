@@ -1,0 +1,21 @@
+2025/07/27-23:45:18.592 1916 Reusing MANIFEST /home/jakleost/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/07/27-23:45:18.596 1916 Recovering log #12
+2025/07/27-23:45:18.596 1916 Reusing old log /home/jakleost/.config/discord/Local Storage/leveldb/000012.log 
+2025/07/27-23:46:19.225 1917 Level-0 table #16: started
+2025/07/27-23:46:19.228 1917 Level-0 table #16: 74868 bytes OK
+2025/07/27-23:46:19.230 1917 Delete type=0 #12
+2025/07/27-23:48:19.226 1916 Level-0 table #18: started
+2025/07/27-23:48:19.233 1916 Level-0 table #18: 74689 bytes OK
+2025/07/27-23:48:19.234 1916 Delete type=0 #15
+2025/07/27-23:48:19.234 1916 Compacting 4@0 + 1@1 files
+2025/07/27-23:48:19.250 1916 Generated table #19@0: 31 keys, 1608598 bytes
+2025/07/27-23:48:19.250 1916 Compacted 4@0 + 1@1 files => 1608598 bytes
+2025/07/27-23:48:19.250 1916 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/07/27-23:48:19.251 1916 Delete type=2 #8
+2025/07/27-23:48:19.251 1916 Delete type=2 #10
+2025/07/27-23:48:19.251 1916 Delete type=2 #13
+2025/07/27-23:48:19.251 1916 Delete type=2 #16
+2025/07/27-23:48:19.251 1916 Delete type=2 #18
+2025/07/27-23:55:19.226 1917 Level-0 table #21: started
+2025/07/27-23:55:19.229 1917 Level-0 table #21: 49593 bytes OK
+2025/07/27-23:55:19.231 1917 Delete type=0 #17

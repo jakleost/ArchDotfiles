@@ -1,0 +1,15 @@
+[submodule "kitty/catppuccin"]
+	path = kitty/catppuccin
+	url = https://github.com/catppuccin/kitty
+[submodule "tmux/catppuccin"]
+	path = tmux/catppuccin
+	url = https://github.com/catppuccin/tmux
+[submodule "tmux/plugins/tmux-sensible"]
+	path = tmux/plugins/tmux-sensible
+	url = https://github.com/tmux-plugins/tmux-sensible
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "tmux/plugins/vim-tmux-navigator"]
+	path = tmux/plugins/vim-tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator

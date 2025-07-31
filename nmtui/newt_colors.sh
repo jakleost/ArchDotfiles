@@ -1,0 +1,25 @@
+export NEWT_COLORS='
+root=white,black
+border=lightgray,black
+window=white,black
+shadow=black,gray
+title=white,black
+button=black,white
+actbutton=black,cyan
+compactbutton=white,black
+checkbox=white,black
+actcheckbox=black,cyan
+entry=white,black
+disentry=gray,black
+label=white,black
+listbox=white,black
+actlistbox=white,white
+sellistbox=black,lightgray
+actsellistbox=black,lightgray
+textbox=white,black
+acttextbox=black,cyan
+emptyscale=white,gray
+fullscale=white,cyan
+helpline=white,black
+roottext=lightgray,black
+'

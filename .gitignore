@@ -5,6 +5,9 @@
 **/.cache/
 **/*.log
 
+QtProject.conf
+pavucontrol.ini
+
 # Discord modules or binaries
 discord/**/discord_voice.node
 
@@ -38,3 +41,6 @@ yay/
 btop/
 cava/
 spotify/
+QtProject/
+VirtualBox/
+easyeffects/

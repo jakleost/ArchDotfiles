@@ -11,7 +11,9 @@ if [ -n "$RUNNING_PIDS" ]; then
     sleep 1
 fi
 
-WALLPAPERS="$HOME/Pictures/Wallpapers"
+# WALLPAPERS="$HOME/Pictures/Wallpapers"
+WALLPAPERS="$HOME/Pictures/Landscape"
+
 # Delay between switches (in seconds)
 INTERVAL=120
 # Transition effect

@@ -1,0 +1,22 @@
+(defpoll battery :interval "10s"
+  "acpi -b | awk -F ', ' '{print $2}' | sed 's/%//g'")
+
+(defpoll charging :interval "10s"
+  "acpi -b | grep -q 'Charging' && echo true || echo false")
+
+(defwidget battery-widget []
+  (box :orientation "h" :spacing 5 :class "battery"
+    (label :class "icon"
+      :text (if charging ""
+                (if (< (tonumber battery) 20) ""
+                (if (< (tonumber battery) 40) ""
+                (if (< (tonumber battery) 60) ""
+                (if (< (tonumber battery) 80) "" ""))))))
+    (label :class "percentage" :text "${battery}%")))
+
+(defwindow battery-window
+  :monitor 0
+  :geometry (geometry :x "20" :y "20" :width "100" :height "30")
+  :exclusive false
+  (battery-widget))
+

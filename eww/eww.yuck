@@ -1,4 +1,8 @@
+(include "widgets/battery.yuck")
+
+
 (include "./widgets/clock.yuck")
+
 
 (defwindow clock
   :monitor 0

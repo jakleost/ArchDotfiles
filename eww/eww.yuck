@@ -1,13 +1,51 @@
-(include "widgets/battery.yuck")
+(defwidget clock []
+  (box
+    :orientation "vertical"
+    :halign "center"
+    :valign "center"
+    :class "clock1"
+    (label :text time1 :class "time-label1")))
 
 
-(include "./widgets/clock.yuck")
-
-
-(defwindow clock
+(defwindow clock-window
   :monitor 0
-  :geometry (geometry :x "0px" :y "0px" :width "100%" :height "100%")
-  :stacking "bg"
+  :geometry (geometry :x "50px" :y "0px" :anchor "bottom left" :width "400px" :height "200px")
+  :stacking "bottom"
   :exclusive false
-  (desktop-clock))
+  :wm-ignore false
+  (clock))
 
+  (defpoll time1 :interval "1s"
+              :initial "initial-value"  ; optional, defaults to poll at startup
+              :run-while time-visible   ; optional, defaults to 'true'
+  `date +%H:%M`)
+(defwindow battery-info
+  :monitor 0
+  :geometry (geometry :x "100px" :y "0px" :anchor "bottom left" :width "200px" :height "200px")
+  :stacking "bottom"
+  :exclusive false
+  :wm-ignore false
+
+
+  (_battery :status {EWW_BATTERY.BAT1.status}
+                :battery {EWW_BATTERY.BAT1.capacity}
+                :charge "" :one "" :two "" :three "" :four ""
+                :five "" ))
+
+
+
+(defwidget _battery [battery status one two three
+                    four five  charge]
+  (box  :space-evenly false :spacing 8
+    (label :class "battery-text1" :text {
+	battery < 5  && status == "Charging" ? "󰢟" : battery < 5 ? "󰂎" :
+	battery < 15  && status == "Charging" ? "󰢜" : battery < 15 ? "󰁺" :
+	battery < 25  && status == "Charging" ? "󰂆" : battery < 25 ? "󰁻" :
+	battery < 35  && status == "Charging" ? "󰂇" : battery < 35 ? "󰁼" :
+	battery < 45  && status == "Charging" ? "󰂈" : battery < 45 ? "󰁽" :
+	battery < 55  && status == "Charging" ? "󰢝" : battery < 55 ? "󰁾" :
+	battery < 65  && status == "Charging" ? "󰂉" : battery < 65 ? "󰁿" :
+	battery < 75  && status == "Charging" ? "󰢞" : battery < 75 ? "󰂀" :
+	battery < 85  && status == "Charging" ? "󰂊" : battery < 85 ? "󰂁" :
+	battery < 95  && status == "Charging" ? "󰂋" : battery < 95 ? "󰂂" :
+	status == "Charging" ? "󰂅" : "󰁹" })))

@@ -7,6 +7,8 @@
 
 QtProject.conf
 pavucontrol.ini
+okularpartrc
+okularrc
 
 # Discord modules or binaries
 discord/**/discord_voice.node
@@ -44,3 +46,5 @@ spotify/
 QtProject/
 VirtualBox/
 easyeffects/
+imhex/
+

@@ -1,5 +1,19 @@
-label {
-  font-family: "JetBrainsMono Nerd Font", monospace;
+* {
+    background-color: rgba(0, 0, 0, 0); /* Adjust the alpha value for desired transparency */
 }
-
-
+.clock1 {
+    background-color: rgba(0, 0, 0, 0); /* Adjust the alpha value for desired transparency */
+  }
+  
+  .time-label1 {
+    font-size: 70px;
+    font-family: "Hack Nerd Font Mono";
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px rgb(70, 70, 70);
+  }
+  .battery-text1 {
+    font-size: 50px;
+    font-family:"Hack Nerd Font Mono"; 
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 4px rgb(70, 70, 70);
+  }
